@@ -1,0 +1,26 @@
+#questionText {
+    font-size:30px;
+    margin:20px auto;
+}
+
+.choice {
+    font-size:25px;
+    cursor:pointer;
+    text-decoration:none;
+    color: black;
+}
+
+.choice:hover {
+    text-decoration:none;
+}
+
+.answerBox {
+    display:inline;
+    border:solid 1px black; 
+    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding:15px;
+    border-radius:5px;
+    background-color:lightgray;
+}

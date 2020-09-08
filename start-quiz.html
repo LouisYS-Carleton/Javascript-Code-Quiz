@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="This is a quiz to test your Javascript knowledge. Have fun!">
+
+    <title>Coding Quiz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+
+<!-- Navigator Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+        <a class="navbar-brand" href="highscores.html">
+            View Highscores
+        </a> 
+        <a href="quiz-assignment.html" class="btn btn-primary ml-3">
+            Restart
+        </a>    
+        <div class="navbar-collapse" id="navbarText"></div>
+        <section class="navbar-text" id='restartButton'>
+            Time Left:
+        </section>
+        <span class="navbar-text" id="countdown">
+            75
+        </span>
+    </nav>
+<!-- End of Navigator Bar -->
+
+    <br>
+
+<!-- Main Quiz Text -->
+    <main class="card text-center d-flex">
+        <h2 class="card-header">
+            Code Quiz
+        </h2>
+        <article id="questionText">
+
+        </article>
+        <section class="card mt-4 d-flex" id="answers"> 
+            <div class='answerBox'>
+                <a class="choice" id="choiceA" onclick="VerifyAnswer('A');"></a>
+            </div>
+            <div class='answerBox'>
+                <a class="choice" id="choiceB" onclick="VerifyAnswer('B');"></a>
+            </div>
+            <div class='answerBox'>
+                <a class="choice" id="choiceC" onclick="VerifyAnswer('C');"></a>
+            </div>
+            <div class='answerBox'>
+                <a class="choice" id="choiceD" onclick="VerifyAnswer('D');"></a>
+            </div>
+        </section>
+    </main>
+<!-- End of Main Quiz Text -->
+    <script text= "javascript" src="./Javascript/quiz-assignment.js"></script>
+</body>
+</html>
