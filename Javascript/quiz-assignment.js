@@ -77,7 +77,7 @@ function StartDownCounting() {
         if (quizTime < 0) {
             clearInterval(interval);
             alert("Time's up, try again")
-            location.href = '../index.html';
+            location.href = 'index.html';
             
         }
     }, 1000);
